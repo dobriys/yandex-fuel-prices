@@ -1,0 +1,14 @@
+{
+  "domain": "yandex_fuel_prices",
+  "name": "Yandex Fuel Prices",
+  "codeowners": [
+    "@dobriys"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/dobriys/yandex-fuel-prices",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/dobriys/yandex-fuel-prices/issues",
+  "requirements": [],
+  "version": "0.1.1"
+}

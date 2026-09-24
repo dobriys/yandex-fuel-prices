@@ -1,0 +1,42 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add a gas station",
+        "description": "Paste a Yandex Maps link to the station (full or short yandex.ru/maps/-/...) or its organization id. Prices come from Yandex.Zapravki and are shown only for Russian IP addresses.",
+        "data": {
+          "station": "Yandex Maps link or organization id",
+          "fuel": "Fuel",
+          "name": "Station name (optional)"
+        }
+      }
+    },
+    "error": {
+      "invalid_station": "Could not find an organization id in this link",
+      "cannot_connect": "Could not connect to Yandex",
+      "region": "Yandex redirected to a foreign domain: prices are only available from a Russian IP (disable VPN/proxy for Home Assistant)",
+      "captcha": "Yandex returned a captcha, try again later",
+      "no_prices": "This station has no fuel prices on Yandex Maps",
+      "fuel_not_found": "Fuel not found. Available: {fuels}"
+    },
+    "abort": {
+      "already_configured": "This station and fuel are already added"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "scan_interval": "Update interval, minutes"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "price_updated": {
+        "name": "Price updated"
+      }
+    }
+  }
+}
